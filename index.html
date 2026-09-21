@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - WillNgene</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MyLogo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <!--<li><a href="#">About</a></li> Commented this to load about ? ): -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <!--<li><a href="#contact">Contact</a></li>  Commented this so that user is not navigated to contact section on initial load-->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-row">
+                
+                <div class="header-text">
+                    <span class="hero-kicker">WELCOME TO MY PORTFOLIO</span>
+                    <h1>Hi, I am <span>Wilson Ngene</span></h1>
+                    <h2 class="hero-subtitle">System Architect & Systems Analyst</h2>
+
+                    <!-- Inserted Clean domain badges (SKILLS) -->
+                    <div class="domain-pills">
+                        <span>Enterprise System Design</span>
+                        <span>Digital Transformation</span>
+                        <span>API Integration</span>
+                        <span>Data Lead</span>
+                        <span>Certified Scrum Master</span>
+                    </div> 
+                    
+                    <p class="hero-description"> <!-- Hero Description - Might depend on roles I apply? e.g Digital Transformation Specialist -->
+                        I am a system architect, data lead and a certified scrum master with over 10 years of experience: Designing, scaling and integrating complex ERP data, RESTful APIs, and financial management systems.
+                        I turn complex business problems into smooth digital tools by connecting big-picture strategy with hands-on development.
+                    </p>
+
+                    <!-- My Tech Badges -->
+                    <div class="tech-pills">
+                        <span class="pill">Unit4 ERP</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">SQL & T-SQL</span>
+                        <span class="pill">REST APIs</span>
+                        <span class="pill">Power BI</span>
+                        <span class="pill">Scrum Master</span>
+                    </div>
+
+                    <!-- CTA Buttons - clickable graphic promptfor an immediate action-->
+                    <div class="hero-btns">
+                        
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                        <!-- LinkedIn CTA Link -->
+                        <a href="https://www.linkedin.com/in/wilson-n-2a9b6689/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="images/Waroko_Wilson_Ngene_CV.pdf" class="btn btn-secondary" download>Download CV</a>
+                    </div>
+                </div>
+
+                <div class="header-img">
+                    <img src="images/usernoname.png" alt="Wilson Ngene Profile Picture">
+                </div>
+
+            </div> <!-- End of header-row -->
+        <!-- ==========================================================================
+        ABOUT MENU - caused me chaos! :)
+        ========================================================================== -->
+        <div id="about">
+            <div class="container">
+                <div class="about-row">
+            
+                 <!-- Left Side: Profile or Visual Accent -->
+                <div class="about-col-1">
+                <img src="images/usernoname.png" alt="Wilson Ngene About Picture">
+                </div>
+
+            <!-- Right Side: Narrative & Structured Tabs -->
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text">
+                    I am a Systems and Data Infrastructure Specialist with over a decade of experience designing, scaling, and managing enterprise data architectures across international scientific research institutes (SKAO) and global non-governmental organizations. My core expertise sits at the intersection of database architecture, API integration, financial management systems (Unit4 ERP), and data governance (UK GDPR).
+                </p>
+
+                <!-- Interactive Tab Titles -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Main Competencies</p>
+                    <!--<p class="tab-links" onclick="opentab('experience')">Core Pillars</p> -->
+                    <!-- Changed 'Core Pillars' to 'Experience' -->
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Certifications & Education</p>
+                </div>
+
+                <!-- Tab 1: Skills Content -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>System Architecture</span><br>Enterprise ERP Design, API Integrations, Financial & Operational Systems</li>
+                        <li><span>Data Engineering & Analytics</span><br>T-SQL, SQL Server Architecture, Data Transformation, Power BI Reporting</li>
+                        <li><span>Agile Leadership</span><br>Scrum Master, Sprint Facilitation, Technical Project Delivery, Stakeholder Alignment</li>
+                    </ul>
+                </div>
+
+                <!-- Tab 2: Experience Content --> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Unit4 ERP Developer | Square Kilometre Array Observatory (SKAO)</span><br>
+                            Engineered enterprise data architectures, API integrations, and Unit4 ERP system workflows for global scientific research operations.
+                        </li>
+                        <li>
+                            <span>Enterprise Resource Planning Specialist | Save the Children International</span><br>
+                            Managed financial and operational database architectures across international non-governmental infrastructure.
+                        </li>
+                        <li>
+                            <span>Regional Systems Coordinator East and Southern Africa | Norwegian Refugee Council (NRC)</span><br>
+                            Led data governance, system analysis, and database maintenance across global humanitarian platforms.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tab 3: Certifications Content -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Certified Scrum Master (CSM)</span><br>Agile Frameworks & Team Facilitation</li>
+                        <li><span>Unit4 ERP Specialist</span><br>Enterprise Resource Planning & System Configuration</li>
+                        <li><span>Systems Architecture & Engineering</span><br>Enterprise Database & Software Design</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>    
+
+        </div> <!-- End of container -->
+    </div> <!-- End of header -->
+
+
+     <!-- ========================================================================== -->
+    <!--  CONTACT SECTION  NEED TO BE ABLE TO STORE THE MESSAGES SENT???                     -->
+    <!-- ========================================================================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                
+                <!-- Left Side: Information -->
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Information</h1>
+                    
+                    <div class="contact-details">
+                        <!-- The span tag goes around the phone numbers -->
+                        <p><strong>Phone:</strong> <span class="highlight">0722 XXX XXX | 0723 XXX XXX | +44 734 XXX X XXX</span></p>
+                        <!-- The span tag goes around the email address -->
+                         <p><strong>Email:</strong> <span class="highlight">wngene77@gmail.com</span></p>
+                    </div>
+
+                    <p class="contact-text">
+                        Or you can send a quick message using the form below and I will get back to you as soon as possible.
+                    </p>
+                    <p class="contact-text">
+                        If you are a recruiter, hiring manager or project lead looking for new talent I am always open to having a chat about potential roles, enterprise system architecture or digital transformation opportunities. I look forward to connecting and exploring how we can work together.
+                    </p>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact-right">
+                    <form action="#" method="POST">
+                         <!-- Full Name Input Field: Uses placeholder so guide text disappears when typing -->
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <!-- Email Address Input Field: Validates email format automatically -->
+                        <input type="email" name="Email" placeholder="Your email address" required>
+                        <!-- Subject Line / Message Title Input Field -->
+                        <input type="text" name="Subject" placeholder="Subject / Message title" required>
+                        <!-- Multi-line Message Textarea Box -->
+                        <textarea name="Message" rows="5" placeholder="Your message ..." required></textarea>
+                <!-- Verification / Captcha Placeholder Box -->
+                <div class="captcha-box">
+                    <input type="checkbox" id="human">
+                    <label for="human">Dev in Progress</label>
+                </div>
+
+                 <!-- Form Submit Button -->
+                <button type="submit" class="btn-submit">Submit Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <p>©2026. <span class="highlight-text">WILSON NGENE</span>. All Rights Reserved.</p>
+  </div>
+</footer>
+
+     <!-- ========================================================================== -->
+    <!--  This JAVA script controls the interactive About Me tab navigation on your page.
+
+            When a user clicks on a tab button (like Main Competencies, Core Pillars, or Certifications & Education), it:
+            Strips the active styling highlight from all tab headers.
+            Hides all the tab content blocks currently visible on screen.
+            Highlights the specific tab header that was just clicked.
+            Reveals the corresponding tab content block matching the selected tab ID (tabname).                  -->
+    <!-- ========================================================================== -->
+<script>
+    // 1. Collect all elements with the 'tab-links' class (the tab titles/buttons)
+    var tablinks = document.getElementsByClassName("tab-links");
+    
+    // 2. Collect all elements with the 'tab-contents' class (the content lists/panels)
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    // Main function triggered whenever a user clicks a tab title (e.g., opentab('skills'))
+    function opentab(tabname) {
+        
+        // Loop through all tab title elements and remove 'active-link'
+        // This turns off the blue underline/highlight on inactive tabs
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        
+        // Loop through all tab content panels and remove 'active-tab'
+        // This sets display: none on all content sections to hide them
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        // Add 'active-link' to the specific tab title that was clicked
+        // Applies the blue underline highlight to show it is selected
+        event.currentTarget.classList.add("active-link");
+       
+        // Target the content element matching the passed ID (e.g., 'skills', 'experience') 
+        // and add 'active-tab' to make its text content visible (display: block)
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+
+</body>
+</html>
