@@ -570,3 +570,78 @@ textarea:focus::placeholder {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* ==========================================
+   GLOBAL MOBILE RESPONSIVE STYLES
+   ========================================== */
+@media screen and (max-width: 768px) {
+
+  /* 1. Prevent Horizontal Scrolling */
+  html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* 2. Container & Section Adjustments */
+  .container, 
+  section, 
+  header, 
+  footer, 
+  div[class*="container"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3. Convert Flexbox & Grid Layouts to Vertical Stacks */
+  .row, 
+  .grid, 
+  .flex-container, 
+  .work-list, 
+  .portfolio-list, 
+  .about-col-1, 
+  .about-col-2,
+  .contact-left, 
+  .contact-right {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 4. Responsive Images & Media */
+  img, svg, video, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 5. Responsive Form Elements */
+  form, input, textarea, button, select {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 6. Typography Scaling for Smaller Screens */
+  h1 { font-size: 28px !important; }
+  h2 { font-size: 24px !important; }
+  h3 { font-size: 20px !important; }
+  p, li { font-size: 15px !important; }
+
+  /* 7. Navigation Bar Mobile Stacking */
+  nav ul {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  nav ul li {
+    margin: 8px 0 !important;
+  }
+}
