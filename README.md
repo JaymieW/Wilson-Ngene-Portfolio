@@ -28,7 +28,7 @@ A clean, responsive, dark-themed personal portfolio showcasing my professional w
 2. **About Me:** Interactive tabbed interface covering:
    - **Main Competencies:** Core technical strengths across enterprise architecture and data infrastructure.
    - **Experience:** Overview of roles across key international scientific and humanitarian organizations (SKAO, Save the Children, NRC).
-   - **Certifications & Education:** Professional qualifications including Scrum Master and systems specialization.
+   - **Certifications & Education:** Professional qualifications including Scrum Master,BI certificate, Google project mangement certificate and systems specialization.
 3. **Services & Projects:** Breakdown of technical offerings and key deliverables.
 4. **Contact Form:** Direct communication form with focused input states.
 
